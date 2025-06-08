@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Name – Resume</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Resume</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(to right, #ffffff, #000000);
+      font-family: Arial, sans-serif;
+      color: #222;
     }
-    .container {
+
+    main {
       width: 90%;
       max-width: 600px;
       margin: auto;
-      padding: 20px;
+      padding: 2rem 1rem;
     }
+
+    h1 {
+      color: forestgreen;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .job-title {
+      color: blue;
+      margin-bottom: 1rem;
+    }
+
     img {
       max-width: 100%;
       height: auto;
-      display: block;
-      margin-bottom: 20px;
+      border-radius: 8px;
+      margin: 1.5rem 0;
     }
 
-    h1, p {
-      margin: 0 0 10px 0;
+    address {
+      font-style: normal;
+      margin-top: 1rem;
+    }
+
+    a {
+      color: forestgreen;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-    <div class="container">
-      <h1 style="color: forestgreen">Dylan eats farts</h1>
-      <img src="images/hotdog.jpg" alt="hotdog picture" width="800" />
-      <p style="color: blue">IT Professional studying for CompTIA A+</p>
-      <p>Email: you@example.com</p>
-    </div>
+  <main>
+    <h1>Your Name</h1>
+    <img src="images/hotdog.jpg" alt="Hotdog" />
+    <p class="job-title">IT Professional studying for CompTIA A+</p>
+    <address>
+      Email: <a href="mailto:you@example.com">you@example.com</a>
+    </address>
+  </main>
 </body>
 </html>

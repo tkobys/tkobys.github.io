@@ -12,18 +12,36 @@
       justify-content: center;  /* horizontal centering */
       align-items: center;      /* vertical centering */
       font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+      position: relative;
     }
 
     .centered-text {
       text-align: center;
       font-size: 2rem;
     }
+    /* Top-left corner */
+    .top-left {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 1rem;
+    }
+
+    /* Bottom-center */
+    .bottom-center {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1rem;
   </style>
 </head>
 <body>
+ <div class="top-left">337.446.1372</div>
   <div class="centered-text">
     Koby Thibodeaux <br>
     Ideal Candidate
   </div>
+   <div class="bottom-center">Lafayette, Louisiana</div>
 </body>
 </html>

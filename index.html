@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Business Card</title>
@@ -11,66 +11,105 @@
   <link rel="manifest" href="/site.webmanifest" />
   <style>
     @font-face {
-     font-family: 'Copperplate Gothic Light';
-     font-style: normal;
-     font-weight: 400;
-     }
-    a{
-      color: inherit;
+      font-family: 'Copperplate Gothic Light';
+      font-style: normal;
+      font-weight: 400;
     }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     body {
       margin: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 24px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 26.4px;
+      font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+      font-size: 24px;
+      font-style: normal;
+      font-variant: small-caps;
+      font-weight: 700;
+      line-height: 26.4px;
       position: relative;
+      padding: 2rem;
+      box-sizing: border-box;
     }
 
-    .centered-text1 {
+    .content {
       text-align: center;
+    }
+
+    .name {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
       font-size: 1.5rem;
+      margin-bottom: 2rem;
     }
-    .centered-text2 {
-      position: absolute;
-      top: 42rem;
-      text-align: center;
-      font-size: 1.25rem;
-      
-    }
+
     .top-left {
       position: absolute;
-      top: 1.5rem;
-      left: 2rem;
-      font-size: 1.35rem;
+      top: 1rem;
+      left: 1rem;
+      font-size: 1rem;
     }
-    .top-right1 {
+
+    .top-right {
       position: absolute;
-      top: 1.5rem;
-      right: 2.9rem;
-      font-size: 1.5rem;
+  	  top: 1rem;
+ 	  right: 1rem;
+ 	  display: flex;
+ 	  flex-direction: column;
+  	  align-items: center;
+  	  text-align: center;
+  	  font-size: 1rem;
     }
-    .top-right2 {
-      position: absolute;
-      top: 3rem;
-      right: 3.1rem;
-      font-size: 1.2rem;
-    }
+
     .bottom-center {
       position: absolute;
       bottom: 1rem;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 1.35rem;
+      font-size: 1rem;
+    }
+
+    /* Responsive scaling */
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+      }
+
+      .name {
+        font-size: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+      }
+    }
   </style>
 </head>
 <body>
- <div class="top-left">337.446.1372</div>
- <div class="top-right1"> WORK & SKILLS</div>
- <div class="top-right2"><a href="KThibodeaux_Resume.pdf" style="text-decoration:none">Resume </a>and <a href="https://www.linkedin.com/in/kobythib/" style="text-decoration:none">LinkedIn </a> </div>
- <div class="centered-text1">Koby THIBODEAUX  </div>
- <div class="centered-text2">Design Enjoyer</div>
- <div class="bottom-center">LAFAYETTE, LOUISIANA 70506</div>
+  <div class="top-left">337.446.1372</div>
+
+  <div class="top-right">
+    <div>WORK & SKILLS</div>
+    <div>
+      <a href="KThibodeaux_Resume.pdf">Resume</a> and
+      <a href="https://www.linkedin.com/in/kobythib/">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="name">Koby THIBODEAUX</div>
+    <div class="subtitle">Design Enjoyer</div>
+  </div>
+
+  <div class="bottom-center">LAFAYETTE, LOUISIANA 70506</div>
 </body>
 </html>
